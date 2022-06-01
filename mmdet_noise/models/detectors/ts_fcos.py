@@ -43,6 +43,11 @@ class TSFCOS(FCOS):
             p.requires_grad = False
         self.tmodel.eval()
 
+    def train(self, mode=True):
+        super().train(mode)
+        self.tmodel.eval()
+        return self
+
     def forward_train(self,
                       img,
                       img_metas,

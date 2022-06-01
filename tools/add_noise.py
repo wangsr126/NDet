@@ -21,7 +21,7 @@ def parse_args():
         '--force-replace', action='store_true', help='if set, new annotation will be generated no matter '
                                                      'whether it exists')
     parser.add_argument(
-        '-o', '--out_suffix', type=str, default='noise', help='add suffix to the output annotations file name'
+        '-o', '--suffix', type=str, default='noise', help='add suffix to the output annotations file name'
     )
     parser.add_argument(
         '--display', action='store_true', help='whether display')

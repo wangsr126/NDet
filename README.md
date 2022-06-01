@@ -8,13 +8,13 @@ It is based on [mmdetection](https://github.com/open-mmlab/mmdetection).
 
 ## Usage
 ### Installation
-Please refer to [get_started.md](https://github.com/open-mmlab/mmdetection/blob/master/docs/get_started.md) for installation and dataset preparation.
+Please refer to [get_started.md](https://github.com/open-mmlab/mmdetection/blob/master/docs/get_started.md) for installation and dataset preparation. Note that we use a previous version: mmdet==2.8.0.
 
 ### Noisy dataset preparation
 The annotations with synthesized noise we used have been uploaded to [link1](https://drive.google.com/file/d/1rTLiEJltAp3iHVMSlV7iFvmGHuvw6Qy8/view?usp=sharing),[link2](https://drive.google.com/file/d/1x8Q8n-pcOKwocKtEeTJc10ax1k10vdgY/view?usp=sharing).
 Alternatively, we provide the code for generating such noisy annotations:
 ```bash
-python tools/add_noise.py --data-root ./data/coco --split train2017 --sigma 0.1 -o syn01
+python tools/add_noise.py --data-root ./data/coco --split train2017 --gamma 0.1 -o syn01
 ```
 Then, the annotations in COCO format are presented in `./data/coco/annotations/instances_train2017_syn01.json`.
 

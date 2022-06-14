@@ -1,6 +1,6 @@
 # Narrowing the Gap: Improved Detector Training with Noisy Location Annotations
 
-This repository is an official implementation of the paper: [Link](TBD).
+This repository is an official implementation of the paper: [Link](https://arxiv.org/abs/2206.05708).
 It is based on [mmdetection](https://github.com/open-mmlab/mmdetection).
 
 ## Introduction
